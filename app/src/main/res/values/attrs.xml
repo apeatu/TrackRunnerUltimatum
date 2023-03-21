@@ -28,6 +28,8 @@
             <enum name="DonutLoadingRenderer" value="16"/>
             <!--Speedometer-->
             <enum name="SpeedometerLoadingRenderer" value="17"/>
+<!--            road with arrows-->
+            <enum name="roadWithArrowsRenderer" value="18"/>
         </attr>
     </declare-styleable>
 </resources>

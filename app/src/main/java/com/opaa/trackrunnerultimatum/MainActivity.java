@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 FoodActivity.startActivity(this);
                 break;
             case R.id.speedometer:
-                SpeedometerActivity.startActivity(this);
+                DrivingActivity.startActivity(this);
                 break;
             default:
                 break;

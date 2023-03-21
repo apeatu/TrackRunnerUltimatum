@@ -6,16 +6,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class SpeedometerActivity extends AppCompatActivity {
+public class DrivingActivity extends AppCompatActivity {
 
     public static void startActivity(Context context) {
-        Intent intent = new Intent(context, SpeedometerActivity.class);
+        Intent intent = new Intent(context, DrivingActivity.class);
         context.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_speedometer);
+        setContentView(R.layout.activity_driving);
     }
 }

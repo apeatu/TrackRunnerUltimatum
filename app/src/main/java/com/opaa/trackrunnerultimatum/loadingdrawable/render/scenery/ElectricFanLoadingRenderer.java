@@ -227,8 +227,8 @@ public class ElectricFanLoadingRenderer extends LoadingRenderer {
         //draw electric background
         mPaint.setColor(mElectricFanBgColor);
         mPaint.setStyle(Paint.Style.FILL);
-        canvas.drawCircle(arcBounds.right - mCenterRadius, arcBounds.bottom - mCenterRadius,
-                mCenterRadius - mStrokeWidth + DEFAULT_STROKE_INTERVAL, mPaint);
+//        canvas.drawCircle(arcBounds.right - mCenterRadius, arcBounds.bottom - mCenterRadius,
+//                mCenterRadius - mStrokeWidth + DEFAULT_STROKE_INTERVAL, mPaint);
 
         //draw electric fan
         int rotateSaveCount = canvas.save();
@@ -237,7 +237,7 @@ public class ElectricFanLoadingRenderer extends LoadingRenderer {
                 (int) (electricFanCenterY - mElectricFanDrawable.getIntrinsicHeight() / 2 * mScale),
                 (int) (electricFanCenterX + mElectricFanDrawable.getIntrinsicWidth() / 2 * mScale),
                 (int) (electricFanCenterY + mElectricFanDrawable.getIntrinsicHeight() / 2 * mScale));
-        mElectricFanDrawable.draw(canvas);
+//        mElectricFanDrawable.draw(canvas);
         canvas.restoreToCount(rotateSaveCount);
 
         //draw 100% text

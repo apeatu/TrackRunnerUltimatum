@@ -15,6 +15,7 @@ import com.opaa.trackrunnerultimatum.loadingdrawable.render.circle.rotate.GearLo
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.circle.rotate.LevelLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.circle.rotate.MaterialLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.circle.rotate.WhorlLoadingRenderer;
+import com.opaa.trackrunnerultimatum.loadingdrawable.render.drivingThings.RoadWithArrowsLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.food.DonutLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.goods.BalloonLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.goods.WaterBottleLoadingRenderer;
@@ -22,7 +23,7 @@ import com.opaa.trackrunnerultimatum.loadingdrawable.render.scenery.DayNightLoad
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.scenery.ElectricFanLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.shapechange.CircleBroodLoadingRenderer;
 import com.opaa.trackrunnerultimatum.loadingdrawable.render.shapechange.CoolWaitLoadingRenderer;
-import com.opaa.trackrunnerultimatum.loadingdrawable.render.speedomeeter.SpeedometerLoadingRenderer;
+import com.opaa.trackrunnerultimatum.loadingdrawable.render.drivingThings.SpeedometerLoadingRenderer;
 
 public final class LoadingRendererFactory {
     private static final SparseArray<Class<? extends LoadingRenderer>> LOADING_RENDERERS = new SparseArray<>();
@@ -54,6 +55,8 @@ public final class LoadingRendererFactory {
         LOADING_RENDERERS.put(16, DonutLoadingRenderer.class);
         //Speedometer
         LOADING_RENDERERS.put(17, SpeedometerLoadingRenderer.class);
+//        Road with arrows
+        LOADING_RENDERERS.put(18, RoadWithArrowsLoadingRenderer.class);
     }
 
     private LoadingRendererFactory() {
